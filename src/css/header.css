@@ -1,0 +1,229 @@
+.header {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding-top: 32px;
+  background: transparent;
+  z-index: 100;
+}
+.header-container {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+}
+@media only screen and (min-width: 768px) {
+  .header-container {
+    align-items: center;
+  }
+}
+.header-logo {
+  display: flex;
+  gap: 8px;
+}
+.header-logo-picture {
+  border-radius: 18px;
+}
+.header-logo-text {
+  font-family: var(--font-family);
+  color: #fafafa;
+}
+
+/* Menu button for mobile devices */
+
+.burger-menu-btn {
+  background-color: transparent;
+  color: #fff;
+  font-weight: 500;
+  border: none;
+  font-size: 16px;
+  cursor: pointer;
+  padding: 10px;
+  transition: color 0.3s ease;
+}
+
+/* Menu button for tablets and desktops */
+
+.menu-btn {
+  display: none;
+}
+@media only screen and (min-width: 768px) {
+  .menu-btn {
+    display: inline;
+    background-color: transparent;
+    border: none;
+    font-weight: 500;
+    font-size: 16px;
+    letter-spacing: -0.02em;
+    text-decoration: underline;
+    color: #fafafa;
+  }
+  .burger-menu-btn {
+    display: none;
+  }
+}
+
+/* Order button for tablets and desktops */
+
+.header-btn-link {
+  display: none;
+}
+.header-btn-order {
+  display: none;
+}
+@media only screen and (min-width: 768px) {
+  .header-btn-link {
+    display: inline;
+  }
+  .header-btn-order {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    gap: 10px;
+    border-radius: 60px;
+    padding: 14px 31px;
+    width: 164px;
+    height: 45px;
+    background: #ed3b44;
+    font-weight: 500;
+    font-size: 14px;
+    letter-spacing: -0.02em;
+    color: #fafafa;
+    border: none;
+    cursor: pointer;
+  }
+  .header-btn-order:hover {
+    background: #e0373f;
+  }
+}
+
+/* Menu for tablets and desktops */
+.nav {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  right: 0;
+  z-index: 50;
+  width: 100%;
+  background: transparent;
+  visibility: hidden;
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out, visibility 0.3s ease-in-out;
+}
+.nav.open {
+  visibility: visible;
+  opacity: 1;
+}
+.nav-list {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 5px;
+}
+.nav-link {
+  font-family: var(--font-family);
+  font-weight: 500;
+  font-size: 16px;
+  letter-spacing: -0.02em;
+  text-decoration: underline;
+  color: #fafafa;
+}
+
+/* Mobile menu */
+
+.mobile-menu {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  z-index: 9999;
+  background-image: url(../img/hero.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  pointer-events: none;
+  visibility: hidden;
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out, visibility 0.3s ease-in-out;
+}
+@media only screen and (min-width: 768px) {
+  .mobile-menu {
+    display: none;
+  }
+}
+.mobile-menu.open {
+  visibility: visible;
+  opacity: 1;
+  pointer-events: auto;
+}
+.mobile-menu-container {
+  position: relative;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.mobile-menu-btn-close {
+  background-color: transparent;
+  border: none;
+  padding: 0;
+  margin-top: 32px;
+  margin-left: auto;
+}
+.mobile-menu-nav {
+  margin-top: auto;
+  margin-bottom: auto;
+  /* margin-top: 242px;
+  margin-bottom: 289px; */
+}
+.mobile-menu-list {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 12px;
+}
+.mobile-menu-link {
+  font-family: var(--font-family);
+  font-weight: 500;
+  font-size: 16px;
+  letter-spacing: -0.02em;
+  text-decoration: underline;
+  color: #fafafa;
+}
+.mobile-menu-link:hover,
+.mobile-menu-link:active {
+  color: #ed3b44;
+}
+
+/* Order button for mobile devices */
+
+.mobile-menu-btn-link {
+  margin: 0 auto;
+  margin-top: auto;
+  margin-bottom: 64px;
+}
+.mobile-menu-btn-order {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  gap: 10px;
+  border-radius: 60px;
+  padding: 14px 31px;
+  width: 164px;
+  height: 45px;
+  background: #ed3b44;
+  font-weight: 500;
+  font-size: 14px;
+  letter-spacing: -0.02em;
+  color: #fafafa;
+  border: none;
+  cursor: pointer;
+}
+.mobile-menu-btn-order:hover {
+  background: #e0373f;
+}

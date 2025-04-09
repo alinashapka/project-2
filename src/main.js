@@ -6,9 +6,11 @@ import '@fontsource/inter-tight/800.css';
 import '@fontsource/inter-tight/900.css';
 // зайві потім приберем
 
+import { initHeader } from "./js/header.js";
 import { AccordionFaq } from "./js/faq.js";
 
 
 document.addEventListener('DOMContentLoaded', () => {
+  initHeader();
   AccordionFaq();
 });
