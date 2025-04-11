@@ -2,127 +2,271 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/project-2/favicon.svg" />
+    <!-- Favicon -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Vanilla App Template</title>
+    <title>Portfolio</title>
+    <link rel="icon" href="./public/favicon.png" type="image/png" />
     <script type="module" crossorigin src="/project-2/index.js"></script>
-    <link rel="stylesheet" crossorigin href="/project-2/assets/styles-DvPDDfy5.css">
+    <link rel="modulepreload" crossorigin href="/project-2/assets/vendor-BOe0o62v.js">
+    <link rel="stylesheet" crossorigin href="/project-2/assets/vendor-mlPEkQaX.css">
+    <link rel="stylesheet" crossorigin href="/project-2/assets/index-CKlDKFgM.css">
   </head>
+
   <body>
+    <!-- Loads the specified .html file -->
     <header class="header">
-  <div class="container">
-    <nav class="nav">
-      <a class="nav-logo" href="./index.html" aria-label="Site logo">
-        <svg class="nav-logo-icon" width="100" height="30">
-          <use href="/project-2/assets/sprite-E8vg0sBb.svg#logo"></use>
+  <div class="container header-container">
+    <a href="/" class="header-logo">
+      <img class="header-logo-picture" src="/project-2/assets/logo-BgHlQLgS.png" alt="Logo" />
+      <span class="header-logo-text">jefferson*</span>
+    </a>
+    <button class="burger-menu-btn" type="button">
+      <svg class="burger-menu-icon" width="28" height="28">
+        <use href="/project-2/assets/icons-Cqo2mRoF.svg#icon-menu"></use>
+      </svg>
+    </button>
+    <button class="menu-btn" type="button">Menu</button>
+    <a href="#work-together" class="header-btn-link">
+      <button class="header-btn-order" type="button">Order the project</button>
+    </a>
+  </div>
+  <nav class="nav">
+    <ul class="nav-list">
+      <li class="nav-item">
+        <a href="#about-me" class="nav-link">About me</a>
+      </li>
+      <li class="nav-item">
+        <a href="#benefits" class="nav-link">Benefits</a>
+      </li>
+      <li class="nav-item">
+        <a href="#projects" class="nav-link">Projects</a>
+      </li>
+      <li class="nav-item">
+        <a href="#faq" class="nav-link">FAQ</a>
+      </li>
+    </ul>
+  </nav>
+  <div class="mobile-menu">
+    <div class="container mobile-menu-container">
+      <button class="mobile-menu-btn-close" type="button">
+        <svg class="mobile-menu-x" width="28" height="28">
+          <use href="/project-2/assets/icons-Cqo2mRoF.svg#icon-x"></use>
         </svg>
+      </button>
+      <nav class="mobile-menu-nav">
+        <ul class="mobile-menu-list">
+          <li class="mobile-menu-item">
+            <a href="#about-me" class="mobile-menu-link">About me</a>
+          </li>
+          <li class="mobile-menu-item">
+            <a href="#benefits" class="mobile-menu-link">Benefits</a>
+          </li>
+          <li class="mobile-menu-item">
+            <a href="#projects" class="mobile-menu-link">Projects</a>
+          </li>
+          <li class="mobile-menu-item">
+            <a href="#faq" class="mobile-menu-link">FAQ</a>
+          </li>
+        </ul>
+      </nav>
+      <a href="#work-together" class="mobile-menu-btn-link">
+        <button class="mobile-menu-btn-order" type="button">
+          Order the project
+        </button>
       </a>
-      <ul class="nav-list">
-        <li class="nav-item">
-          <a class="nav-link {=$highlight-act}" href="./page-2.html">Page 2</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link {=$highlight-curr}" href="./page-3.html">Page 3</a>
-        </li>
-      </ul>
-    </nav>
+    </div>
   </div>
 </header>
 
+    <section class="container hero-container">
+  <h1 class="hero-title">
+    Hello.<br />I’m Fullstack developer<br />Lloyd Jefferson.
+  </h1>
+  <ul class="hero-socials">
+    <li class="hero-socials-item">
+      <a href="https://www.instagram.com/goitclub/" class="hero-socials-link"
+        >IG</a
+      >
+    </li>
+    <li class="hero-socials-item">
+      <a href="https://www.youtube.com/c/GoIT" class="hero-socials-link">YT</a>
+    </li>
+    <li class="hero-socials-item">
+      <a href="https://www.facebook.com/goITclub/" class="hero-socials-link"
+        >FB</a
+      >
+    </li>
+    <li class="hero-socials-item">
+      <a
+        href="https://alinashapka.github.io/project-2/"
+        class="hero-socials-link"
+        >GH</a
+      >
+    </li>
+    <li class="hero-socials-item">
+      <a href="mailto:lloydjefferson@gmail.com" class="hero-socials-link-email"
+        >lloydjefferson@gmail.com</a
+      >
+    </li>
+  </ul>
+</section>
+
+    
+    
+    
+    <section class="container faq-section" id="faq">
+  <h2 class="faq-title">FAQ</h2>
+  <ul class="accordion-container-faq">
+    <li class="ac-faq">
+      <h3 class="ac-header-faq">
+        <button type="button" class="ac-trigger-faq">
+          <span class="ac-trigger-text"
+            >What programming languages are most often used in your
+            project?</span
+          >
+          <span class="open-arrow">
+            <svg class="open-arrow-icon rotated" width="20" height="20">
+              <use href="/project-2/assets/icons-Cqo2mRoF.svg#icon-openning-arrow" />
+            </svg>
+          </span>
+        </button>
+      </h3>
+      <div class="ac-panel-faq">
+        <p class="ac-text-faq">
+          In the field of web development, there are various technologies and
+          programming languages. Typically, this includes a combination of
+          frontend (client side) and backend (server side) languages.
+        </p>
+      </div>
+    </li>
+    <li class="ac-faq">
+      <h3 class="ac-header-faq">
+        <button type="button" class="ac-trigger-faq">
+          <span class="ac-trigger-text mobile-version"
+            >What are the deadlines for<br />the project?</span
+          >
+          <span class="ac-trigger-text desktop-version"
+            >What are the deadlines for the project?</span
+          >
+          <span class="open-arrow">
+            <svg class="open-arrow-icon rotated" width="20" height="20">
+              <use href="/project-2/assets/icons-Cqo2mRoF.svg#icon-openning-arrow" />
+            </svg>
+          </span>
+        </button>
+      </h3>
+      <div class="ac-panel-faq">
+        <p class="ac-text-faq">
+          The terms of project implementation depend to a large extent on a
+          number of factors, such as the scope of the project, its complexity,
+          and the availability of resources. Determining exact deadlines is a
+          difficult task, and it usually occurs during the planning phase of the
+          project.
+        </p>
+      </div>
+    </li>
+    <li class="ac-faq">
+      <h3 class="ac-header-faq">
+        <button type="button" class="ac-trigger-faq">
+          <span class="ac-trigger-text"
+            >What payment methods do you accept?</span
+          >
+          <span class="open-arrow">
+            <svg class="open-arrow-icon rotated" width="20" height="20">
+              <use href="/project-2/assets/icons-Cqo2mRoF.svg#icon-openning-arrow" />
+            </svg>
+          </span>
+        </button>
+      </h3>
+      <div class="ac-panel-faq">
+        <p class="ac-text-faq">
+          Payment through credit and debit cards such as Visa, MasterCard,
+          specialized electronic payment systems such as PayPal, as well as
+          payments in cryptocurrencies such as Bitcoin, Ethereum and others.
+        </p>
+      </div>
+    </li>
+    <li class="ac-faq">
+      <h3 class="ac-header-faq">
+        <button type="button" class="ac-trigger-faq">
+          <span class="ac-trigger-text">How can I contact you?</span>
+          <span class="open-arrow">
+            <svg class="open-arrow-icon rotated" width="20" height="20">
+              <use href="/project-2/assets/icons-Cqo2mRoF.svg#icon-openning-arrow" />
+            </svg>
+          </span>
+        </button>
+      </h3>
+      <div class="ac-panel-faq">
+        <p class="ac-text-faq">
+          In the field of web development, there are various technologies and
+          programming languages. Typically, this includes a combination of
+          frontend (client side) and backend (server side) languages.
+        </p>
+      </div>
+    </li>
+    <li class="ac-faq">
+      <h3 class="ac-header-faq">
+        <button type="button" class="ac-trigger-faq">
+          <span class="ac-trigger-text mobile-version"
+            >Do you provide advice<br />or support?</span
+          >
+          <span class="ac-trigger-text desktop-version"
+            >Do you provide advice or support?</span
+          >
+          <span class="open-arrow">
+            <svg class="open-arrow-icon rotated" width="20" height="20">
+              <use href="/project-2/assets/icons-Cqo2mRoF.svg#icon-openning-arrow" />
+            </svg>
+          </span>
+        </button>
+      </h3>
+      <div class="ac-panel-faq">
+        <p class="ac-text-faq">
+          The terms of project implementation depend to a large extent on a
+          number of factors, such as the scope of the project, its complexity,
+          and the availability of resources. Determining exact deadlines is a
+          difficult task, and it usually occurs during the planning phase of the
+          project.
+        </p>
+      </div>
+    </li>
+    <li class="ac-faq">
+      <h3 class="ac-header-faq">
+        <button type="button" class="ac-trigger-faq">
+          <span class="ac-trigger-text mobile-version"
+            >What does the process of developing a software product look like
+            from idea to implementation?</span
+          >
+          <span class="ac-trigger-text desktop-version"
+            >What does the process of developing a software<br />product look
+            like from idea to implementation?</span
+          >
+          <span class="open-arrow">
+            <svg class="open-arrow-icon rotated" width="20" height="20">
+              <use href="/project-2/assets/icons-Cqo2mRoF.svg#icon-openning-arrow" />
+            </svg>
+          </span>
+        </button>
+      </h3>
+      <div class="ac-panel-faq">
+        <p class="ac-text-faq">
+          Payment through credit and debit cards such as Visa, MasterCard,
+          specialized electronic payment systems such as PayPal, as well as
+          payments in cryptocurrencies such as Bitcoin, Ethereum and others.
+        </p>
+      </div>
+    </li>
+  </ul>
+</section>
+
+    
+    
+    
 
     <main>
       <!-- Loads the specified .html file -->
-      <section class="vite-promo">
-  <div class="container">
-    <div class="vite-promo-thumb">
-      <a
-        class="vite-promo-link"
-        href="https://vitejs.dev/"
-        target="_blank"
-        rel="noopener noreferrer"
-        aria-label="Link to Vite official website"
-        title="Vite.js  build tool"
-      >
-        <!-- Path to images as from index.html file -->
-        <img
-          class="pic"
-          src="/project-2/assets/vite-logo-9o_aqrTe.png"
-          alt="Vite logo"
-          width="640"
-          height="640"
-        />
-      </a>
-    </div>
-    <h1 class="main-title">
-      <span class="main-title-gradient">Vite</span>
-      Template by
-      <a
-        class="main-title-link"
-        href="https://github.com/goitacademy/vanilla-app-template"
-        target="_blank"
-        rel="noopener noreferrer"
-      >
-        GoIT
-      </a>
-    </h1>
-  </div>
-</section>
-
-      <article class="badges">
-  <div class="container">
-    <ul class="badges-list">
-      <li class="badges-item">
-        <a
-          class="badges-link"
-          href="https://www.npmjs.com/package/vite-plugin-html-inject"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          HTML Inject
-        </a>
-      </li>
-      <li class="badges-item">
-        <a
-          class="badges-link"
-          href="https://www.npmjs.com/package/vite-plugin-full-reload"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Full Reload
-        </a>
-      </li>
-      <li class="badges-item">
-        <a
-          class="badges-link"
-          href="https://www.npmjs.com/package/postcss-sort-media-queries"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Sort Media Queries
-        </a>
-      </li>
-    </ul>
-  </div>
-</article>
-
+      
     </main>
-
-    <footer class="footer">
-  <div class="container">
-    <p class="footer-desc">
-      Made with ✨ by
-      <a
-        class="footer-link"
-        href="https://goit.global/ua/"
-        target="_blank"
-        rel="noopener noreferrer"
-      >
-        GoIT team
-      </a>
-    </p>
-  </div>
-</footer>
-
-
   </body>
 </html>
